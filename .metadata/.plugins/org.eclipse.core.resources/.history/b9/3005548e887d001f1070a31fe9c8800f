@@ -1,0 +1,49 @@
+package fp.estudiantes;
+
+import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
+
+import fp.utiles.Checkers;
+
+public class Estudiante {
+	private String nombre;
+	private LocalDate fechaNacimiento;
+	private Boolean esRepetidor;
+	private Double notaMedia;
+	private Set<Asignatura>asignaturas;
+	public Estudiante(String nombre, LocalDate fechaNacimiento, Boolean esRepetidor, Double notaMedia,
+			Set<Asignatura> asignaturas) {
+		Checkers.check("La nota media no puede ser negativa ni superar el valor de 10"
+				,notaMedia>=0&&notaMedia<=10);
+		Checkers.check("El numero de asiganturas cursadas deben variar en el rango 1-10"
+				, asignaturas.size()>=0&&asignaturas.size()<=10);
+		
+		
+		this.nombre = nombre;
+		this.fechaNacimiento = fechaNacimiento;
+		this.esRepetidor = esRepetidor;
+		this.notaMedia = notaMedia;
+		this.asignaturas = asignaturas;
+		
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public LocalDate getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+	public Boolean getEsRepetidor() {
+		return esRepetidor;
+	}
+	public Double getNotaMedia() {
+		return notaMedia;
+	}
+	public Set<Asignatura> getAsignaturas() {
+		return new HashSet<>(asignaturas);
+	}
+	public Integer getEdad() {
+		return fechaNacimiento.until(LocalDate.now()).getYears();
+	}
+	
+}

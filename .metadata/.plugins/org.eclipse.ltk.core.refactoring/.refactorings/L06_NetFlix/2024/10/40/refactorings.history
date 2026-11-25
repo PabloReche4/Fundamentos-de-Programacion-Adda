@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;fp.utiles&apos; to &apos;Jugadores/src/jugadores&apos;&#x0D;&#x0A;- Original project: &apos;L06_NetFlix&apos;&#x0D;&#x0A;- Destination element: &apos;Jugadores/src/jugadores&apos;&#x0D;&#x0A;- Original element: &apos;L06_NetFlix/src/fp.utiles&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=Jugadores/src&lt;jugadores" element1="/src&lt;fp.utiles" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1728039351884" version="1.0"/>
+</session>

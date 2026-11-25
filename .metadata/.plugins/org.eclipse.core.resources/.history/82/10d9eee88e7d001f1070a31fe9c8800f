@@ -1,0 +1,44 @@
+package fp.estudiantes;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+
+import fp.utiles.Checkers;
+
+public class FactoriaGrupo {
+//	public static EstadisticasPartidos leePartidos(String ruta) {
+//		EstadisticasPartidos res = null;
+//		try {
+//			Stream<Partido> sv = Files.lines(Paths.get(ruta))
+//									    .skip(1)
+//										.map(FactoriaPartidos::parseaPartido);
+//			res = new EstadisticasPartidos(sv);
+//		} catch (IOException e) {
+//			System.out.println("No se ha encontrado el fichero " + ruta);
+//			e.printStackTrace();
+//		}
+//		return res;{
+//	}
+	public static Grupo  leeEstudiantes(String ruta) {
+		Grupo res=null;
+		try {
+			Stream <Estudiante> sv=Files.lines(Paths.get(ruta))
+					.skip(1)
+					.map(FactoriaGrupo::parsearEstudiante);
+			res= new Grupo(sv);
+			}catch(IOException e) {
+				System.out.println("No se ha encontrado el fichero"+ruta);
+				e.printStackTrace();
+			}
+		return res;
+	}
+	private static Estudiante parsearEstudiante(String s) {
+		String[]trozos=s.split(";");
+		Checkers.check("Formato no válido", s.length()==5);
+		
+		
+	}
+	
+}

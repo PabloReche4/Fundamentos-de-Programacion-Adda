@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;src.fp.ciclismo&apos; to &apos;fp.ciclismo&apos;&#x0D;&#x0A;- Original project: &apos;TEOCICLISMO&apos;&#x0D;&#x0A;- Original element: &apos;TEOCICLISMO/src/src.fp.ciclismo&apos;&#x0D;&#x0A;- Renamed element: &apos;TEOCICLISMO/src/fp.ciclismo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;src.fp.ciclismo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;src.fp.ciclismo" name="fp.ciclismo" qualified="false" references="true" stamp="1713883528232" textual="false" version="1.0"/>
+</session>

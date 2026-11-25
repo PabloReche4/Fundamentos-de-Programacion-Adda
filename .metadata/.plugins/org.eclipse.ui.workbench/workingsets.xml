@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1706892931652_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1706892931667_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1728033185001_6" label="adda" name="adda">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EJERCICIOSEXAMENADDA" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PI1Exercises" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/CLASE1ADDA" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/COMPLEJIDAD" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DIVIDEYVENCERAS" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PI2" type="4"/>
+<item elementID="=Adda2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1728035844026_8" label="fp" name="fp">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EXA-2223-2P-S2-Buses" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TEOCiclismos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TEO-Sevici-Java" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/T01.1-Figuras" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/T01.2-Casa" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/T03.1-ExperimentosListas" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TEO-Aeropuerto" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Octubre20222023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EJE01-Expresiones" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ExamenJulio23" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ExamenMayo2024" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/L04_Vinos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EJE04-CombIntFunc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EXA-2223-2P-S1-Futbol" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Bucles1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/L06_NetFlix" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/T02.0-Tipos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/T01.3-ClaseLaboratorio" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/T01.0-Compras" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/LAB-Nobel" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/T03.4-Lexico" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EXA-2223-2P-S1-Futbol_Resuelto" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Jugadores" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Junio2023" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Hamburguesas" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Trayectos" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1728036021705_9" label="repo" name="repo">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/SolveTest" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EjemplosPracticas" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ParteComun" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EjemplosIterativosRecursivos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Solve" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Grafos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EjemplosParteComun" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EjemplosAlgoritmos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EjemplosGeneticos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EjemplosDeGrafos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/EjemplosPL" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DatosCompartidos" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Parsers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/adda_v3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Geneticos" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1706892932711_2" label="Window Working Set" name="Aggregate for window 1706892932711"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1706897577890_3" label="Window Working Set" name="Aggregate for window 1706897577890"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1707229991047_4" label="Window Working Set" name="Aggregate for window 1707229991047"/>
+<mruList name="adda"/>
+</workingSetManager>

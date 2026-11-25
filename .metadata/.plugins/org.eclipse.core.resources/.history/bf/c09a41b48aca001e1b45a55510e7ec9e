@@ -1,0 +1,106 @@
+package fp.tipos;
+
+import java.time.LocalDate;
+
+public class CursoOnline {
+ 
+	//Atributos
+	private String id;
+	private String titulo;
+	private String organizacion;
+	private LocalDate fechaInicio;
+	private LocalDate fechaFin;
+	private Integer duracion;
+	private TipoCerificacion tipoCertificacion;
+	private Double valoracion;
+	private NivelDificultad nivelDificultad;
+	private Integer numeroEstudiantes;
+	private Boolean gratuito;
+	//OJO para las propiedades derivadas no se necesitan atributos
+	
+	//Constructores
+	public CursoOnline(String id, String titulo, String organizacion, LocalDate fechaInicio, LocalDate fechaFin, Integer duracion, TipoCerificacion tipoCertificacion, Double valoracion, 
+			NivelDificultad nivelDificultad,  Integer numeroEstudiantes, Boolean gratuito
+		) {
+		this.id = id;
+		this.titulo = titulo;
+		this.organizacion = organizacion;
+		this.fechaInicio = fechaInicio;
+		this.fechaFin = fechaFin;
+		this.duracion= duracion;
+		this.tipoCertificacion= tipoCertificacion;
+		this.valoracion= valoracion;
+		this.nivelDificultad= nivelDificultad;
+		this.numeroEstudiantes= numeroEstudiantes;
+		this.gratuito = gratuito;
+		
+	
+		
+	}
+	//Consultores y modificadores
+
+	public LocalDate getFechaInicio() {
+		return fechaInicio;
+	}
+
+	public void setFechaInicio(LocalDate fechaInicio) {
+		this.fechaInicio = fechaInicio;
+	}
+
+	public LocalDate getFechaFin() {
+		return fechaFin;
+	}
+
+	public void setFechaFin(LocalDate fechaFin) {
+		this.fechaFin = fechaFin;
+	}
+
+	public Integer getDuracion() {
+		return duracion;
+	}
+
+	public void setDuracion(Integer duracion) {
+		this.duracion = duracion;
+	}
+
+	public Boolean getGratuito() {
+		return gratuito;
+	}
+
+	public void setGratuito(Boolean gratuito) {
+		this.gratuito = gratuito;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public String getOrganizacion() {
+		return organizacion;
+	}
+
+	public TipoCerificacion getTipoCertificacion() {
+		return tipoCertificacion;
+	}
+
+	public Double getValoracion() {
+		return valoracion;
+	}
+
+	public NivelDificultad getNivelDificultad() {
+		return nivelDificultad;
+	}
+
+	public Integer getNumeroEstudiantes() {
+		return numeroEstudiantes;
+	}
+	  //Propiedades derivadas
+	public Double getMediaHorasSemanales () {
+		
+	}
+	public E
+}

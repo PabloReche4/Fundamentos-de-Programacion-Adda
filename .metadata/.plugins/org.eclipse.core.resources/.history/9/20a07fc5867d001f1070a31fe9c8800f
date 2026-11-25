@@ -1,0 +1,12 @@
+package fp.estudiantes;
+
+import java.time.LocalDate;
+import java.util.Set;
+
+public class Estudiante {
+	private String nombre;
+	private LocalDate fechaNacimiento;
+	private Boolean esRepetidor;
+	private Double notaMedia;
+	private Set<Asignatura>asignaturas;
+}

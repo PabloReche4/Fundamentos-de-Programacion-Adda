@@ -1,0 +1,27 @@
+package fp.estudiantes;
+
+import java.time.LocalDate;
+import java.util.Set;
+
+import fp.utiles.Checkers;
+
+public class Estudiante {
+	private String nombre;
+	private LocalDate fechaNacimiento;
+	private Boolean esRepetidor;
+	private Double notaMedia;
+	private Set<Asignatura>asignaturas;
+	public Estudiante(String nombre, LocalDate fechaNacimiento, Boolean esRepetidor, Double notaMedia,
+			Set<Asignatura> asignaturas) {
+		Checkers.check("La nota media no puede ser negativa ni superar el valor de 10"
+				+ ", esRepetidor);
+		
+		super();
+		this.nombre = nombre;
+		this.fechaNacimiento = fechaNacimiento;
+		this.esRepetidor = esRepetidor;
+		this.notaMedia = notaMedia;
+		this.asignaturas = asignaturas;
+	}
+	
+}

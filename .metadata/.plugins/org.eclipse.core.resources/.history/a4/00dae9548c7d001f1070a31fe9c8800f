@@ -1,0 +1,24 @@
+package fp.estudiantes;
+
+
+public class FactoriaGrupo {
+//	public static EstadisticasPartidos leePartidos(String ruta) {
+//		EstadisticasPartidos res = null;
+//		try {
+//			Stream<Partido> sv = Files.lines(Paths.get(ruta))
+//									    .skip(1)
+//										.map(FactoriaPartidos::parseaPartido);
+//			res = new EstadisticasPartidos(sv);
+//		} catch (IOException e) {
+//			System.out.println("No se ha encontrado el fichero " + ruta);
+//			e.printStackTrace();
+//		}
+//		return res;{
+//	}
+	public static Grupo  leeEstudiantes(String ruta) {
+		Grupo res=null;
+		try {
+			Stream <Estudiante>
+		}
+	}
+}

@@ -1,0 +1,16 @@
+package fp.tipos;
+
+import java.time.LocalDate;
+
+public class CursoOnline {
+ 
+	//Atributos
+	private String id;
+	private String titulo;
+	private String organizacion;
+	private LocalDate fechaInicio;
+	private LocalDate fechaFin;
+	private Integer duracion;
+	private TipoCerificacion tipoCertificacion;
+	private 
+}

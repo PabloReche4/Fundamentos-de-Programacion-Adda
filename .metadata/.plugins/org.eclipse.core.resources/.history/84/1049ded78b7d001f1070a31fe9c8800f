@@ -1,0 +1,14 @@
+package fp.estudiantes;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.stream.Stream;
+
+import fp.futbol.EstadisticasPartidos;
+import fp.futbol.FactoriaPartidos;
+import fp.futbol.Partido;
+
+public class FactoriaGrupo {
+
+}

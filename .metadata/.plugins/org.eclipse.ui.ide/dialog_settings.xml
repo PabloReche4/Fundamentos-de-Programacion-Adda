@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\betis\eclipse-workspace\EXA-2223-2P-S1-Futbol"/>
+			<item value="C:\Users\betis\eclipse-workspace\Java-main.zip_expanded\Java-main\EJE01-Expresiones"/>
+			<item value="C:\Users\betis\eclipse-workspace\Java-main.zip_expanded\Java-main\T02.0-Tipos"/>
+			<item value="C:\Users\betis\eclipse-workspace\T02.0-Tipos"/>
+			<item value="C:\Users\betis\eclipse-workspace\T01.1-Figuras"/>
+			<item value="C:\Users\betis\Downloads\T01.0-Compras-main"/>
+			<item value="C:\Users\betis\Downloads"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\betis\Downloads\Junio2023.zip"/>
+			<item value="C:\Users\betis\Desktop\Vinos.zip"/>
+			<item value="C:\Users\betis\Downloads\LAB-Buses-main.zip"/>
+			<item value="C:\Users\betis\Downloads\LAB-Futbol-main.zip"/>
+			<item value="C:\Users\betis\Downloads\LAB-Netflix-main.zip"/>
+			<item value="C:\Users\betis\Downloads\LAB-Vinos-main.zip"/>
+			<item value="C:\Users\betis\Downloads\TEO-Sevici-Java-main.zip"/>
+			<item value="C:\Users\betis\Downloads\T01.3-ClaseLaboratorio-main.zip"/>
+			<item value="C:\Users\betis\Downloads\T01.2-Casa-main.zip"/>
+			<item value="C:\Users\betis\Downloads\EJE01-Expresiones-main.zip"/>
+			<item value=""/>
+			<item value="C:\Users\betis\Downloads\T01.1-Figuras-main.zip"/>
+		</list>
+		<section name="ExternalProjectImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="619"/>
+			<item key="DIALOG_Y_ORIGIN" value="142"/>
+			<item key="DIALOG_WIDTH" value="700"/>
+			<item key="DIALOG_HEIGHT" value="861"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="347"/>
+		<item key="DIALOG_Y_ORIGIN" value="86"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="645"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="611"/>
+		<item key="DIALOG_Y_ORIGIN" value="269"/>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\betis\git\adda_v3"/>
+		</list>
+		<section name="SmartImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="502"/>
+			<item key="DIALOG_Y_ORIGIN" value="35"/>
+			<item key="DIALOG_WIDTH" value="935"/>
+			<item key="DIALOG_HEIGHT" value="726"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

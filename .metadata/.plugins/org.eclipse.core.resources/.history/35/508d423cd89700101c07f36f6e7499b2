@@ -1,0 +1,115 @@
+package EjerciciosRecursividad;
+
+import java.util.stream.Stream;
+
+public class EjerciciosClase {
+	public static void main(String[] args) {
+		String a = carrera2NoFinal(121, 4);
+		System.out.println(a);
+
+	}
+public String carreraRecursivaNoFinal(Integer min, Integer dias) {
+	String r=null;
+	if(min>=120||dias<=1) {
+		r="Resto de entrenos"+ min;
+	}else {
+		r=dias+ "dias para carrera" + min + "\n" + carreraRecursivaNoFinal(min+10, dias-1 );
+	}
+	return r;
+}
+public String carrerraRecursivaFinal(Integer min, Integer dias) {
+	return carreraRecursivaFinal("", min, dias);
+}
+private String carreraRecursivaFinal(String ac, Integer min, Integer dias) {
+	String r="";
+	if (min>=120|| dias<=1) {
+		r=ac+"Resto de entrenos 120 min";
+	}else {
+		r=carreraRecursivaFinal(ac+ dias+ "dias para la carrera"+min+"minutos", min+10, dias-1);
+	}
+	return r;
+}
+public String carreraImperativa(Integer dias, Integer min) {
+	String a="";
+	while(dias>0||min<120) {
+		a+=dias+"dias para la carrera"+min+"minutos";
+		min+=10;
+		dias-=1;
+	}
+	a="Resto de entrenos 120 min";
+	return a;
+}
+//record T (int d, int m, String ac) {
+//	(static?) T of(int d, int m, String ac) { // metodo de factorias
+//		return (d, m, ac);
+//	}
+//}
+//
+//static T first(int n, int m) {
+//	return T of(d, m, "");
+//}
+//
+//T next() {
+//	return T of(d-1, m+10, ac+"\n" +d+ "dias rest" + m+ "min");
+//}
+//
+//String carreraT(int d, int m) {
+//	T t= Stream.iterate(T.first(d,m), e -> e.next()).filter(e->e.d()>=1 || e.m()>=120).findFirst().get();
+//	return t.ac() + "\n" +  "resto"+ 120+ "min";
+//}
+
+public static String carrera2NoFinal(Integer min, Integer dias) {
+	String ac=null;
+	if (dias<=1) {
+		ac="ultimo entreno hace "+ dias +"dias";
+	}else if(min>=120){
+		ac="resto de entrenos: 120";
+	}else {
+		ac=dias +"dias "+ min+ "minutos"+ carrera2NoFinal((int) (min+min*0.2), dias-1);
+	}
+	return ac;
+}
+public static String carrera2Final(Integer min, Integer dias) {
+	return carrera2Final("",min, dias);
+}
+private static String carrera2Final(String ac, Integer min, Integer dias) {
+	if (dias<=1) {
+		ac="ultimo entreno hace "+ dias +"dias";
+	}else if(min>=120){
+		ac="resto de entrenos: 120";
+	}else {
+		ac=dias +"dias "+ min+ "minutos"+ carrera2Final((int) (min+min*0.2), dias-1);
+	}
+	return ac;
+}
+
+//TODO
+//public static String carrera2Imperativa(Integer min, Integer dias) {
+//	String ac="";
+//	while(min<=120&&dias>1) {
+//		r=String.format(ac, null)
+//	}
+//}
+public static record Tupla(String ac, Double min, Integer dias) {
+	public static Tupla of(String ac, Double min, Integer dias) {
+		return new Tupla(ac, min, dias);
+	}
+	public static Tupla first(Double min, Integer dias) {
+		return new Tupla("", min, dias);
+	}
+	public Tupla next() {
+		return of (ac+dias+"dias para la carrera"+min+"minutos\n", min*1.2, dias-1);
+	}
+}
+public static String carreraFuncional(Double min, Integer dias) {
+	Tupla t = Stream
+		    .iterate(Tupla.first(min, dias), e -> e.next())  
+		    .filter(e -> e.min >= 120 || e.dias == 1)         
+		    .findFirst()                                     
+		    .get();                                          
+	
+}
+}
+
+
+

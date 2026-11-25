@@ -1,0 +1,51 @@
+package EjerciciosRecursividad;
+
+public class EjerciciosClase {
+
+public String carreraRecursivaNoFinal(Integer min, Integer dias) {
+	String r=null;
+	if(min>=120||dias<=1) {
+		r="Resto de entrenos"+ min;
+	}else {
+		r=dias+ "dias para carrera" + min + "\n" + carreraRecursivaNoFinal(min+10, dias-1 );
+	}
+	return r;
+}
+public String carrerraRecursivaFinal(Integer min, Integer dias) {
+	return carreraRecursivaFinal("", min, dias);
+}
+private String carreraRecursivaFinal(String ac, Integer min, Integer dias) {
+	String r="";
+	if (min>=120|| dias<=1) {
+		r=ac+"Resto de entrenos 120 min";
+	}else {
+		r=carreraRecursivaFinal(ac+ dias+ "dias para la carrera"+min+"minutos", min+10, dias-1);
+	}
+	return r;
+}
+public String carreraImperativa(Integer dias, Integer min) {
+	String a="";
+	while(dias>0||min<120) {
+		a+=dias+"dias para la carrera"+min+"minutos";
+		min+=10;
+		dias-=1;
+	}
+	a="Resto de entrenos 120 min";
+	return a;
+}
+
+
+public String carrera2NoFinal(Integer min, Integer dias) {
+	String ac=null;
+	if (dias<=1) {
+		ac="ultimo entreno hace "+ dias +"dias";
+	}else if(min>=120){
+		ac="resto de entrenos: 120";
+	}else {
+		ac
+	}
+}
+}
+
+
+

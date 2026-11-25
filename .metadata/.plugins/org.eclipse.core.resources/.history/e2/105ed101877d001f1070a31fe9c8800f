@@ -1,0 +1,23 @@
+package fp.estudiantes;
+
+import java.time.LocalDate;
+import java.util.Set;
+
+public class Estudiante {
+	private String nombre;
+	private LocalDate fechaNacimiento;
+	private Boolean esRepetidor;
+	private Double notaMedia;
+	private Set<Asignatura>asignaturas;
+	public Estudiante(String nombre, LocalDate fechaNacimiento, Boolean esRepetidor, Double notaMedia,
+			Set<Asignatura> asignaturas) {
+		Ch
+		super();
+		this.nombre = nombre;
+		this.fechaNacimiento = fechaNacimiento;
+		this.esRepetidor = esRepetidor;
+		this.notaMedia = notaMedia;
+		this.asignaturas = asignaturas;
+	}
+	
+}

@@ -1,0 +1,56 @@
+public class Paises_Test {
+
+	public static void main(String[] args) {
+		PaisesDelMundo p = FactoriaPaises.leePaises("C:\\Users\\Administrador\\OneDrive\\Escritorio\\Fundamentos de Programacion\\Eclipse WS\\ExamenesJava\\src\\PaisesDelMundo2\\CSV de la sesión 2");
+	
+		test_lectura(p);
+		test_ej1(p, Continente.SOUTH_AMERICA);
+		test_ej2(p, "Norway");
+		test_ej3(p);
+		test_ej4(p);
+		test_ej5(p, 10);
+	}
+
+	private static void test_lectura(PaisesDelMundo p) {
+		System.out.println("\n ------------------------------------- EJERCICIO LECTURA ------------------------------------- \n");
+		p.getP().stream()
+				.forEach(e->System.out.println(e));
+	}
+	
+	private static void test_ej1(PaisesDelMundo p, Continente cont) {
+		System.out.println("\n ------------------------------------- EJERCICIO 1 ------------------------------------- \n");
+		Double res = p.porcentajeAreaDeContinente(cont);
+		System.out.println("Test porcentajeAreaDeContinente (" + cont + ")");
+		System.out.println(res);
+	}
+	
+	private static void test_ej2(PaisesDelMundo p, String pais) {
+		System.out.println("\n ------------------------------------- EJERCICIO 2 ------------------------------------- \n");
+		List<String> res = p.nombresDeVecinos(pais);
+		System.out.println("Test nombresDeVecinos ("+ pais + ")");
+		System.out.println(res);
+	}
+	
+	private static void test_ej3(PaisesDelMundo p) {
+		System.out.println("\n ------------------------------------- EJERCICIO 3 ------------------------------------- \n");
+		SortedMap<String, List<String>> res = p.paisesPorIdiomas();
+		System.out.println("Test paisesPorIdiomas");
+		System.out.println(res);
+	}
+	
+	private static void test_ej4(PaisesDelMundo p) {
+		System.out.println("\n ------------------------------------- EJERCICIO 4 ------------------------------------- \n");
+		SortedMap<String, String> res = p.paisMayorPoblacionPorMoneda();
+		System.out.println("Test paisMayorPoblacionPorMoneda");
+		System.out.println(res);
+	}
+	
+	private static void test_ej5(PaisesDelMundo p, Integer n) {
+		System.out.println("\n ------------------------------------- EJERCICIO 5 ------------------------------------- \n");
+		List<String> res = p.vecinosMasFrecuentes(n);
+		System.out.println();
+		System.out.println(res);
+	}
+
+
+}

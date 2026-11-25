@@ -1,0 +1,110 @@
+public Map<String, Set<ProduccionNetflix>>  getProduccionesPorGenero(){
+		Map<String, Set<ProduccionNetflix>>res=new HashMap<>();
+		for(ProduccionNetflix titulo:producciones) {
+			for(String generos:titulo.getGeneros()) {
+				if (res.containsKey(generos)) {
+					res.get(generos).add(titulo);
+				}else {
+					Set<ProduccionNetflix> conj=new HashSet<>();
+					conj.add(titulo);
+					res.put(generos, conj);
+				}
+			}
+		}
+		return res;
+	}
+	public SortedSet<String> getGeneros(){
+		return producciones.stream()
+				.flatMap(t->t.getGeneros().stream())
+				.collect(Collectors.toCollection(TreeSet::new));
+	}
+	public List<String> getTitulosDeGenerosOrdenadosPorTamanyo(List<String> generos) {
+		Comparator<ProduccionNetflix>cmp=Comparator.comparing((ProduccionNetflix p)->p.getGeneros().size())
+				.thenComparing(p->p.getTitulo().length());
+		return producciones.stream()
+				.filter(t->t.getGeneros().containsAll(generos))
+				.sorted(cmp.reversed())
+				.map(ProduccionNetflix::getTitulo)
+				.collect(Collectors.toList());
+	}
+	public String getGeneroConMayorPopularidadAcumulada() {
+		Map<String, Set<ProduccionNetflix>> aux = getProduccionesPorGenero();
+		return aux.entrySet().stream()
+				.collect(Collectors.toMap(
+						e->e.getKey(),
+						e->e.getValue().stream()
+							.collect(Collectors.summingLong(
+									ProduccionNetflix::getPopularidad))))
+				.entrySet().stream()
+				.max(Map.Entry.comparingByValue())
+				.get()
+				.getKey();
+	}
+	public SortedMap<Integer, Double> getMediaTopNScoresDeGeneroPorAnyo(String generos, Integer n){
+
+				 
+				Map<Integer, List<ProduccionNetflix>> m = producciones.stream() 
+				  .filter(tit -> tit.getGeneros().contains(generos	))  
+				  .collect(Collectors.groupingBy(tit -> tit.getAñoProduccion())); 
+				   
+				return m.entrySet().stream() 
+				  .collect(Collectors.toMap( 
+				Map.Entry::getKey,  
+				   e -> getMediaImdbNMejoresScore(e.getValue(), n), 
+				   (e1, e2) -> e1, 
+				   TreeMap::new 
+				  )); 
+				} 
+				 
+				private Double getMediaImdbNMejoresScore(List <ProduccionNetflix> cTitulos, Integer n) { 
+				 
+				return cTitulos.stream() 
+				  .sorted(Comparator.comparing(ProduccionNetflix::getScore))  
+				  .limit(n) 
+				  .mapToDouble(ProduccionNetflix::getScore) 
+				  .average() 
+				  .getAsDouble(); 
+				}
+	
+	
+	public SortedMap<Integer, String> getTituloDeTipoMasPopularPorAnyo(Tipo tipo){
+		Comparator<ProduccionNetflix> c = 
+				Comparator.comparing(ProduccionNetflix::getPopularidad);
+		
+		return producciones.stream()
+				.filter(p->p.getTipo().equals(tipo))
+				.collect(Collectors.groupingBy(ProduccionNetflix::getAñoProduccion))
+				.entrySet().stream()
+				.collect(Collectors.toMap(
+						Map.Entry::getKey,
+						e->e.getValue().stream()
+							.max(c)
+							.map(ProduccionNetflix::getTitulo)
+							.orElse(null),
+						(a,b)->a,
+						()-> new TreeMap<>(Comparator.reverseOrder())
+						));
+					
+	}
+	public Double getDuracionMediaDeAnyoYTipo(Tipo tipo, Integer año) {
+		return producciones.stream()
+				.filter(p->p.getAñoProduccion().equals(año)&&p.getTipo().equals(tipo))
+				.mapToLong(p->p.getDuracion().toMinutes())
+				.average()
+				.getAsDouble();
+	}
+	public List<Integer> getAnyosConScoreMedioSuperiorA(Double umbralScore){
+		return producciones.stream()
+				.filter(p->p.getScore()>umbralScore)
+				.map(ProduccionNetflix::getAñoProduccion)
+				.sorted()
+				.toList();
+	}
+	public Map<Integer, Double> getPorcentajeTemporadasSeriesPorAnyo(){
+		Double total=producciones.stream().mapToDouble(ProduccionNetflix::getNumTemporadas).sum();
+		return producciones.stream()
+				.collect(Collectors.groupingBy(ProduccionNetflix::getAñoProduccion, 
+						Collectors.collectingAndThen(Collectors.summingInt(ProduccionNetflix::getNumTemporadas), 
+								i->i/total*100)));
+		
+	}

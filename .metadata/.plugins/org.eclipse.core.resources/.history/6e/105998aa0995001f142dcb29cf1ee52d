@@ -1,0 +1,62 @@
+package exercises;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+
+
+
+public class Exercise3 {
+	public static Set<Integer> ejercicio3RecursivoSinMemoria(Integer a, Integer b, Integer c) {
+		Set<Integer>res=new HashSet<>();
+		if(a<=5||b<=3||c<=2) {
+			res.add(2*a);
+			res.add(b+3);
+			res.add(c);
+		}else {
+			res.addAll(ejercicio3RecursivoSinMemoria(a-5, b/4, c-2));
+			res.addAll(ejercicio3RecursivoSinMemoria(a/3, b-3, c/2));
+		}
+		return res; 
+	}
+	
+	public static Set<Integer> ejercicio3RecursivoConMemoria(Integer a, Integer b, Integer c) {
+		return ejercicioConMemoria( a,  b,  c, new HashMap<>());
+	}
+	
+	private static Set<Integer> ejercicioConMemoria(Integer a, Integer b, Integer c, Map<Tupla, Set<Integer>> m) {
+		Set<Integer>res=new HashSet<>();
+		Tupla key=Tupla.of(a, b, c);
+		if(m.containsKey(key)) {
+			res.addAll(m.get(key));
+		} else {
+			if (a <=5 || b <=3 || c<=2) {
+				res.add(2*a);
+				res.add(b+3);
+				res.add(c);
+			} else {
+				res.addAll(ejercicioConMemoria(a-5, b-3, c/2, m));
+				res.addAll(ejercicioConMemoria(a/3, b-3, c/2, m));
+			}
+			m.put(key, res);
+		}
+		return res;
+	}
+
+	public static Set<Integer> ejercicio3Iterativo(Integer a, Integer b, Integer c) {
+		Map<Tupla, Set<Integer>>res=new HashMap<>();
+		Set<Integer>s=new HashSet<>();
+		
+		
+		return null;
+	}
+	
+	public static record Tupla(Integer a, Integer b, Integer c) {
+		public static Tupla of(Integer a, Integer b, Integer c) {
+			return new Tupla(a, b, c);
+		}
+	}
+
+}

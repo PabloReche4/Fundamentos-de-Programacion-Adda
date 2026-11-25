@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;utiles&apos; to &apos;T02.0-Tipos/src&apos;&#x0D;&#x0A;- Original project: &apos;TEO-Sevici-Java&apos;&#x0D;&#x0A;- Destination element: &apos;T02.0-Tipos/src&apos;&#x0D;&#x0A;- Original element: &apos;TEO-Sevici-Java/src/utiles&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=T02.0-Tipos/src" element1="/src&lt;utiles" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1710864036902" version="1.0"/>
+</session>

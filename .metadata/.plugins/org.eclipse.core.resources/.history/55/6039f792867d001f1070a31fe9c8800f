@@ -1,0 +1,10 @@
+package fp.estudiantes;
+
+import java.time.LocalDate;
+
+public class Estudiante {
+	private String nombre;
+	private LocalDate fechaNacimiento;
+	private Boolean esRepetidor;
+	private 
+}

@@ -1,0 +1,5 @@
+package fp.compras.test;
+
+public enum MomentoDia { MORNING, EVENING, AFTERNOON
+
+}

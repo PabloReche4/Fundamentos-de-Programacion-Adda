@@ -1,0 +1,9 @@
+package EjerciciosRecursividad;
+
+public class EjerciciosClase {
+
+public String carrerera(Integer min, Integer dias) {
+	String r=null;
+	if(min>=1)
+}
+}

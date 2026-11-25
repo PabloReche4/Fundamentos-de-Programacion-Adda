@@ -1,0 +1,10 @@
+package fp.tipos;
+
+public class CursoOnline {
+ 
+	//Atributos
+	private String id;
+	private String titulo;
+	private String organizacion;
+	
+}

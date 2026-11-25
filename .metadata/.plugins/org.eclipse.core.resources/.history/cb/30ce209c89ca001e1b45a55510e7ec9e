@@ -1,0 +1,25 @@
+package fp.tipos;
+
+import java.time.LocalDate;
+
+public class CursoOnline {
+ 
+	//Atributos
+	private String id;
+	private String titulo;
+	private String organizacion;
+	private LocalDate fechaInicio;
+	private LocalDate fechaFin;
+	private Integer duracion;
+	private TipoCerificacion tipoCertificacion;
+	private Double valoracion;
+	private NivelDificultad nivelDificultad;
+	private Integer numeroEstudiantes;
+	private Boolean gratuito;
+	//OJO para las propiedades derivadas no se necesitan atributos
+	
+	//Constructores
+	public CursoOnline(String id, String titulo, String organizacion, LocalDate fechaInicio, LocalDate fevh) {
+		
+	}
+}

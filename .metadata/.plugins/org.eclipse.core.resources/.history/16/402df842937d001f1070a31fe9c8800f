@@ -1,0 +1,66 @@
+package fp.estudiantes;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Stream;
+
+import fp.utiles.Checkers;
+
+public class FactoriaGrupo {
+//	public static EstadisticasPartidos leePartidos(String ruta) {
+//		EstadisticasPartidos res = null;
+//		try {
+//			Stream<Partido> sv = Files.lines(Paths.get(ruta))
+//									    .skip(1)
+//										.map(FactoriaPartidos::parseaPartido);
+//			res = new EstadisticasPartidos(sv);
+//		} catch (IOException e) {
+//			System.out.println("No se ha encontrado el fichero " + ruta);
+//			e.printStackTrace();
+//		}
+//		return res;{
+//	}
+	public static Grupo  leeEstudiantes(String ruta) {
+		Grupo res=null;
+		try {
+			Stream <Estudiante> sv=Files.lines(Paths.get(ruta))
+					.skip(1)
+					.map(FactoriaGrupo::parsearEstudiante);
+			res= new Grupo(sv);
+			}catch(IOException e) {
+				System.out.println("No se ha encontrado el fichero"+ruta);
+				e.printStackTrace();
+			}
+		return res;
+	}
+	private static Estudiante parsearEstudiante(String s) {
+		String[]trozos=s.split(";");
+		Checkers.check("Formato no válido", s.length()==5);
+		String nombre=trozos[0].trim();
+		LocalDate fechaNacimiento=LocalDate.parse(trozos[0].trim(),
+				DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		Boolean esRepetidor=parsearBoolean(trozos[2].trim());
+		Double notaMedia=Double.valueOf(trozos[3].trim());
+		Set<Asignatura>asiganturas=parsearAsignaturas(trozos[4].trim());
+		return new Estudiante(nombre, fechaNacimiento, esRepetidor, notaMedia, asiganturas);
+		
+	}
+	private static Set<Asignatura> parsearAsignaturas(String a) {
+		Set<Asignatura>set=new HashSet<Asignatura>();
+		String limpia=a.replace("[", "").replace("]", "").trim();
+		if(!limpia.equals("")) {
+			String[]tr
+		}
+		return null;
+	}
+	private static Boolean parsearBoolean(String a) {
+			return a.trim().equals("si")?true:false;
+	}
+
+	
+}

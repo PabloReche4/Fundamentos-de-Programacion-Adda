@@ -1,0 +1,6 @@
+package fp.compras.test;
+
+public record MomentoDia() { 
+	MORNING, EVENING
+
+}

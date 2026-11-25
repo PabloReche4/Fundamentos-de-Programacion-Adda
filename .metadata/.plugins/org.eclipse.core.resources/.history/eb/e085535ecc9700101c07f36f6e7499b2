@@ -1,0 +1,15 @@
+package EjerciciosRecursividad;
+
+public class EjerciciosClase {
+
+public String carreraRecursivaNoFinal(Integer min, Integer dias) {
+	String r=null;
+	if(min>=120||dias<=1) {
+		r="Resto de entrenos"+ min;
+	}else {
+		r=dias+ "dias para carrera" + min + "\n" + carreraRecursivaNoFinal(min+10, dias-1 );
+	}
+	return r;
+}
+public String carrerraRecursivaFinal(Integer min, )
+}

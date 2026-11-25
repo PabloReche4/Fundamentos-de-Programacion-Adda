@@ -1,0 +1,11 @@
+package fp.estudiantes;
+
+import java.util.stream.Stream;
+
+public class Grupo {
+private List<>
+	public Grupo(Stream<Estudiante> sv) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

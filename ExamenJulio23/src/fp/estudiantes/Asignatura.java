@@ -1,0 +1,10 @@
+package fp.estudiantes;
+
+import fp.utiles.Checkers;
+
+public record Asignatura(String id, Integer creditos, Integer curso) {
+	public Asignatura{
+		Checkers.check("Los cursos deben estar en el rango 1-4", curso>=1 && curso<=4);
+	}
+
+}
